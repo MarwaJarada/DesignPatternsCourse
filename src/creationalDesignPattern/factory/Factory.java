@@ -1,6 +1,6 @@
-package creationalDesignPattern.Factory;
+package creationalDesignPattern.factory;
 
-import creationalDesignPattern.Factory.model.Delivery;
+import creationalDesignPattern.factory.model.Delivery;
 
 import java.io.*;
 
@@ -14,14 +14,14 @@ public class Factory {
 
     //Using Injection
     static {
-        File file=new File("D:\\6th Semester\\Software Design And Arch\\DesignPatterns\\src\\creationalDesignPattern\\Factory\\model");
+        File file=new File("D:\\6th Semester\\Software Design And Arch\\DesignPatterns\\src\\creationalDesignPattern\\factory\\model");
         File[] classFiles= file.listFiles();
         int number=0;
         for (File classFile: classFiles ){
             String name=classFile.getName().split("\\.")[0];
 
             try {
-                Class deliverySubClass= Class.forName("creationalDesignPattern.Factory.model."+name).asSubclass(Delivery.class);
+                Class deliverySubClass= Class.forName("creationalDesignPattern.factory.model."+name).asSubclass(Delivery.class);
                 deliveryHash.put(number,deliverySubClass);
                 number++;
 

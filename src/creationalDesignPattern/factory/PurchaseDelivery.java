@@ -1,4 +1,4 @@
-package creationalDesignPattern.Factory;
+package creationalDesignPattern.factory;
 
 import java.lang.reflect.InvocationTargetException;
 
