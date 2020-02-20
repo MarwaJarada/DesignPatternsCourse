@@ -20,7 +20,8 @@ public class ControlPanel extends JFrame {
         JTabbedPane tabbedPane=new JTabbedPane();
         for (int num:TabFactory.getHashTap().keySet()){
             Class<? extends SuperTab> tab=TabFactory.getHashTap().get(num);
-            tabbedPane.addTab(tab.getSimpleName(),null);
+            Label label=new Label(tab.getConstructor().newInstance().tabFunctionality());
+            tabbedPane.addTab(tab.getSimpleName(),label);
         }
         this.add(tabbedPane);
         setVisible(true);
