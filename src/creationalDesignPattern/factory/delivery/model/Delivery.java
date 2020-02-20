@@ -1,4 +1,4 @@
-package creationalDesignPattern.factory.model;
+package creationalDesignPattern.factory.delivery.model;
 
 /**
  * @author Marwa N. Jarada
