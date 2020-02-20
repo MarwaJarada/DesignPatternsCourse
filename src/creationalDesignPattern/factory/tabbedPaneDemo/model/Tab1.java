@@ -7,11 +7,10 @@ import creationalDesignPattern.factory.tabbedPaneDemo.SuperTab;
  * @Date 20/2/2020
  */
 
-public class Tab3 implements SuperTab {
+public class Tab1 implements SuperTab {
     @Override
-
     public String tabFunctionality() {
         // Does it's Functionality here
-        return " This is tab number3";
+        return " This is tab number1";
     }
 }
