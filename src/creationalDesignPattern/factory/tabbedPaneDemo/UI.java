@@ -9,7 +9,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.lang.reflect.InvocationTargetException;
 
-public class ControlPanel extends JFrame {
+public class UI extends JFrame {
 
     public  void setJFrame() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         setSize(600, 300);
@@ -31,8 +31,8 @@ public class ControlPanel extends JFrame {
 
 
     public static void main(String[] args) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
-        ControlPanel controlPanel=new ControlPanel();
-        //ControlPanel.createTabs();
+        UI controlPanel=new UI();
+        //UI.createTabs();
         controlPanel.setJFrame();
 
 
