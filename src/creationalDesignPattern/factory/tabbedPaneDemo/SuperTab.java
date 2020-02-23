@@ -1,5 +1,8 @@
 package creationalDesignPattern.factory.tabbedPaneDemo;
 
+import javax.swing.*;
+import java.net.MalformedURLException;
+
 /**
  * @author Marwa N. Jarada
  * @Date 20/2/2020
@@ -7,5 +10,5 @@ package creationalDesignPattern.factory.tabbedPaneDemo;
 
 public interface SuperTab {
 
-    public String tabFunctionality();
+    public JPanel tabFunctionality() throws MalformedURLException;
 }

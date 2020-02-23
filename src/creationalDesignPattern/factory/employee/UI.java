@@ -17,18 +17,17 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
-import javax.swing.*;
-import javax.swing.border.Border;
-import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.net.URL;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 
 public class UI extends Application implements Initializable  {
     @FXML private ListView resultLstView;
     @FXML private TextField searchTxtField;
     @FXML private ComboBox searchCombobox;
+    DbConnection dbConnection;
+    Statement statement;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -52,7 +51,7 @@ public class UI extends Application implements Initializable  {
     }
 
 
-    public void searchEmployee(javafx.event.ActionEvent event) {
+    public void searchEmployee(javafx.event.ActionEvent event) throws SQLException, ClassNotFoundException {
 
 
         if (searchTxtField.getText().isEmpty()){
@@ -72,20 +71,35 @@ public class UI extends Application implements Initializable  {
             String searchCriteria=searchCombobox.getSelectionModel().getSelectedItem().toString();
             String searchValue=searchTxtField.getText();
 
-            if (searchCriteria.equals("lastName")){
+            this.searchEmployee(searchCriteria,searchValue);
 
-                for (int i=0 ; i<Factory.employees.length;i++){
-                    if (Factory.employees[i].getLastName().equals(searchValue)){
-                        resultLstView.setItems(FXCollections.observableArrayList(Factory.employees[i].getFiretName()));
-                    }
-                }
-            }
+
 
 
         }
 
 
     }
+
+
+
+    public void searchEmployee(String criteria,String content) throws SQLException, ClassNotFoundException {
+        dbConnection = DbConnection.getConnection();
+        statement = dbConnection.getStatement();
+        String query = "SELECT* FROM emp WHERE 'criteria'='"+content+"'";
+//        try {
+//            ResultSet resultSet = statement.executeQuery(query);
+//            resultSet.next();
+//            String fname=resultSet.getString("fname");
+//            String lname=resultSet.getString("lname");
+//            resultLstView.setItems(FXCollections.observableArrayList(fname,lname));
+//        }catch (SQLException ex){
+//        }
+
+
+
+    }
+
 
 
 

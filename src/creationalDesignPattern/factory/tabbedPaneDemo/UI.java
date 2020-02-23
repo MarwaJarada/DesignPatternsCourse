@@ -8,6 +8,7 @@ package creationalDesignPattern.factory.tabbedPaneDemo;
 import javax.swing.*;
 import java.awt.*;
 import java.lang.reflect.InvocationTargetException;
+import java.net.MalformedURLException;
 
 public class UI extends JFrame {
 
@@ -20,8 +21,14 @@ public class UI extends JFrame {
         JTabbedPane tabbedPane=new JTabbedPane();
         for (int num:TabFactory.getHashTap().keySet()){
             Class<? extends SuperTab> tab=TabFactory.getHashTap().get(num);
-            Label label=new Label(tab.getConstructor().newInstance().tabFunctionality());
-            tabbedPane.addTab(tab.getSimpleName(),label);
+            JPanel panel= null;
+            try {
+                panel = tab.getConstructor().newInstance().tabFunctionality();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+            tabbedPane.addTab(tab.getSimpleName(),panel);
+
         }
         this.add(tabbedPane);
         setVisible(true);
