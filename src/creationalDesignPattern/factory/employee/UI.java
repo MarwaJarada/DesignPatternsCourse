@@ -18,6 +18,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.net.URL;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
@@ -87,14 +88,14 @@ public class UI extends Application implements Initializable  {
         dbConnection = DbConnection.getConnection();
         statement = dbConnection.getStatement();
         String query = "SELECT* FROM emp WHERE 'criteria'='"+content+"'";
-//        try {
-//            ResultSet resultSet = statement.executeQuery(query);
-//            resultSet.next();
-//            String fname=resultSet.getString("fname");
-//            String lname=resultSet.getString("lname");
-//            resultLstView.setItems(FXCollections.observableArrayList(fname,lname));
-//        }catch (SQLException ex){
-//        }
+        try {
+            ResultSet resultSet = statement.executeQuery(query);
+            resultSet.next();
+            String fname=resultSet.getString("fname");
+            String lname=resultSet.getString("lname");
+            resultLstView.setItems(FXCollections.observableArrayList(fname,lname));
+        }catch (SQLException ex){
+        }
 
 
 
