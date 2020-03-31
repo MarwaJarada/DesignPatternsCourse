@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63dfddbd-81ef-4f0c-b9c1-34764ca8160a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commandDesignPattern/StartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPatern/UI.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPatern/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+    <list default="true" id="63dfddbd-81ef-4f0c-b9c1-34764ca8160a" name="Default" comment="Adding State Design Pattern, Command Design Pattern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/designPatterns/META-INF/designPatterns.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/designPatterns/creationalDesignPattern/factory/employee/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/designPatterns/creationalDesignPattern/factory/employee/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creationalDesignPattern/factory/employee/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creationalDesignPattern/factory/employee/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,38 +139,49 @@
       <option name="presentableId" value="Default" />
       <updated>1582039519951</updated>
       <workItem from="1585566278111" duration="8603000" />
-      <workItem from="1585647487887" duration="4567000" />
+      <workItem from="1585647487887" duration="5138000" />
     </task>
+    <task id="LOCAL؜٠٠٠٠١" summary="Adding State Design Pattern, Command Design Pattern">
+      <created>1585665976415</created>
+      <option name="number" value="LOCAL؜٠٠٠٠١" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠١" />
+      <updated>1585665976416</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding State Design Pattern, Command Design Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding State Design Pattern, Command Design Pattern" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1585573818547">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585573818547" />
-    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1585665932591">
+    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1585665972739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585665932591" />
-    <state width="661" height="94" key="GridCell.Tab.0.bottom" timestamp="1585665932706">
+    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585665972739" />
+    <state width="661" height="229" key="GridCell.Tab.0.bottom" timestamp="1585666490104">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="94" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585665932706" />
-    <state width="661" height="94" key="GridCell.Tab.0.center" timestamp="1585665932706">
+    <state width="661" height="229" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585666490104" />
+    <state width="661" height="229" key="GridCell.Tab.0.center" timestamp="1585666490104">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="94" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585665932706" />
-    <state width="661" height="94" key="GridCell.Tab.0.left" timestamp="1585665932706">
+    <state width="661" height="229" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585666490104" />
+    <state width="661" height="229" key="GridCell.Tab.0.left" timestamp="1585666490104">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="94" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585665932706" />
-    <state width="661" height="94" key="GridCell.Tab.0.right" timestamp="1585665932706">
+    <state width="661" height="229" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585666490104" />
+    <state width="661" height="229" key="GridCell.Tab.0.right" timestamp="1585666490104">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="94" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585665932706" />
+    <state width="661" height="229" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585666490104" />
     <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1585647487928">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
