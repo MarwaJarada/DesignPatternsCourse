@@ -51,6 +51,11 @@ public class UI extends Application implements Initializable {
         player.noHealth();
     }
 
+
+    public void fullHealthBtn(ActionEvent actionEvent) {
+        player.highHEalth();
+    }
+
     public void playerRunsBtn(ActionEvent actionEvent) {
         player.playerRuns();
     }
@@ -85,4 +90,5 @@ public class UI extends Application implements Initializable {
 
 
     }
+
 }
